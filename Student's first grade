@@ -1,11 +1,11 @@
 /**
- * @param {Object} student
- * @param {string} student.name
- * @param {number} student.age
- * @param {number[]} student.grades
+ * @param {Object[]} student
+ * @param {string} student[].name
+ * @param {number} student[].age
+ * @param {number[]} student[].grades
  */
 function getFirstGrade(student) {
-    return student.grades.length[0]
+    return student.grades[0];
 }
 
 // Sample usage - do not modify
