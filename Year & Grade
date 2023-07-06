@@ -1,1 +1,28 @@
+/**
+ * @typedef {{startYear: Number, grade:Number}} Course
+ * @typedef {{name: String, age: Number, learnProgramming: Course}} Student
+ * 
+ * @param {Student} student
+ */
+function getYear(student) {
+    return student.learnProgramming.startYear;
+}
 
+/**
+ * @param {Student} student
+ */
+function getGrade(student) {
+        return student.learnProgramming.grade;
+}
+
+// Sample usage - do not modify
+let student = {
+    name: "Sam Doe",
+    age: 24,
+    learnProgramming: {
+        startYear: 2020,
+        grade: 18
+    }
+};
+console.log(getYear(student)); // 2020
+console.log(getGrade(student)); // 18
