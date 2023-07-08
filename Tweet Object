@@ -2,7 +2,7 @@
  * @param {Object} tweet
  */
 function getFullName(tweet) {
-     return `$tweet.author.details/firstName} ${tweet.author.details.lastName}`;
+     return `${tweet.author.details.firstName} ${tweet.author.details.lastName}`;
 }
 
 
